@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Redes & Telecomunicaciones
+    </title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================
+         BARRA DE NAVEGACIÓN
+    ====================================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+
+            <span>R</span>
+
+            <strong>REDES & TELECOM</strong>
+            <small>2do Semestre</small>
+
+        </div>
+
+
+        <nav>
+
+            <a href="#inicio">
+                Inicio
+            </a>
+
+            <a href="#temas">
+                Temas
+            </a>
+
+            <a href="#dispositivos">
+                Dispositivos
+            </a>
+
+            <a href="#curiosidades">
+                Curiosidades
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =====================================
+         PORTADA
+    ====================================== -->
+
+    <section id="inicio"
+             class="hero">
+
+
+        <!-- TEXTO PRINCIPAL -->
+
+        <div class="hero-text">
+
+
+            <p class="mini-title">
+
+                REDES • CONECTIVIDAD • TECNOLOGÍA
+
+            </p>
+
+
+            <h1>
+
+                REDES Y
+
+                <strong>
+                TELECOMUNICACIONES ITSQMET
+                </strong>
+                Carlos González
+                </strong>
+
+            </h1>
+
+
+            <p class="description">
+
+                Descubre cómo las redes conectan
+                dispositivos, permiten compartir
+                información y hacen posible la
+                comunicación en todo el mundo.
+
+            </p>
+
+
+            <a href="#temas"
+               class="button">
+
+                EXPLORAR TEMAS
+
+            </a>
+
+
+        </div>
+
+
+
+        <!-- =====================================
+             RED INTERACTIVA
+        ====================================== -->
+
+        <div class="network">
+
+
+            <!-- LÍNEAS -->
+
+            <div class="line line1"></div>
+
+            <div class="line line2"></div>
+
+            <div class="line line3"></div>
+
+
+
+            <!-- PC -->
+
+            <div class="node pc"
+                 onclick="mostrarDispositivo('pc')">
+
+                PC
+
+            </div>
+
+
+
+            <!-- SWITCH -->
+
+            <div class="node switch"
+                 onclick="mostrarDispositivo('switch')">
+
+                SWITCH
+
+            </div>
+
+
+
+            <!-- ROUTER -->
+
+            <div class="node router"
+                 onclick="mostrarDispositivo('router')">
+
+                ROUTER
+
+            </div>
+
+
+
+            <!-- INTERNET -->
+
+            <div class="node internet"
+                 onclick="mostrarDispositivo('internet')">
+
+                INTERNET
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         TEMAS PRINCIPALES
+    ====================================== -->
+
+    <section id="temas"
+             class="section">
+
+
+        <div class="section-header">
+
+
+            <p>
+                01 • CONOCIMIENTOS
+            </p>
+
+
+            <h2>
+                Temas principales
+            </h2>
+
+
+        </div>
+
+
+
+        <div class="cards">
+
+
+            <!-- IP -->
+
+            <div class="card">
+
+
+                <div class="icon">
+                    IP
+                </div>
+
+
+                <h3>
+                    Dirección IP
+                </h3>
+
+
+                <p>
+
+                    Identifica lógicamente un
+                    dispositivo dentro de una red.
+
+                </p>
+
+
+                <button
+                    onclick="mostrarTema('ip')">
+
+                    VER MÁS →
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- VLAN -->
+
+            <div class="card">
+
+
+                <div class="icon">
+                    VL
+                </div>
+
+
+                <h3>
+                    VLAN
+                </h3>
+
+
+                <p>
+
+                    Permite dividir una red física
+                    en diferentes redes lógicas.
+
+                </p>
+
+
+                <button
+                    onclick="mostrarTema('vlan')">
+
+                    VER MÁS →
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- ROUTER -->
+
+            <div class="card">
+
+
+                <div class="icon">
+                    RT
+                </div>
+
+
+                <h3>
+                    Router
+                </h3>
+
+
+                <p>
+
+                    Conecta diferentes redes y
+                    dirige los paquetes hacia
+                    su destino.
+
+                </p>
+
+
+                <button
+                    onclick="mostrarTema('router')">
+
+                    VER MÁS →
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- SWITCH -->
+
+            <div class="card">
+
+
+                <div class="icon">
+                    SW
+                </div>
+
+
+                <h3>
+                    Switch
+                </h3>
+
+
+                <p>
+
+                    Conecta diferentes dispositivos
+                    dentro de una red local.
+
+                </p>
+
+
+                <button
+                    onclick="mostrarTema('switch')">
+
+                    VER MÁS →
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- WIFI -->
+
+            <div class="card">
+
+
+                <div class="icon">
+                    WI
+                </div>
+
+
+                <h3>
+                    Wi-Fi
+                </h3>
+
+
+                <p>
+
+                    Tecnología que permite conectar
+                    dispositivos de manera inalámbrica.
+
+                </p>
+
+
+                <button
+                    onclick="mostrarTema('wifi')">
+
+                    VER MÁS →
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- TCP/IP -->
+
+            <div class="card">
+
+
+                <div class="icon">
+                    IP
+                </div>
+
+
+                <h3>
+                    TCP/IP
+                </h3>
+
+
+                <p>
+
+                    Conjunto de protocolos fundamentales
+                    para la comunicación en Internet.
+
+                </p>
+
+
+                <button
+                    onclick="mostrarTema('tcp')">
+
+                    VER MÁS →
+
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         MODAL
+    ====================================== -->
+
+    <div id="modal"
+         class="modal">
+
+
+        <div class="modal-content">
+
+
+            <button class="close"
+                    onclick="cerrarModal()">
+
+                ×
+
+            </button>
+
+
+            <p class="modal-label">
+
+                INFORMACIÓN
+
+            </p>
+
+
+            <h2 id="modal-title">
+
+                Tema
+
+            </h2>
+
+
+            <p id="modal-text">
+
+                Información del tema.
+
+            </p>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================
+         DISPOSITIVOS
+    ====================================== -->
+
+    <section id="dispositivos"
+             class="dark-section">
+
+
+        <div class="section-header white">
+
+
+            <p>
+                02 • HARDWARE
+            </p>
+
+
+            <h2>
+                Dispositivos de red
+            </h2>
+
+
+        </div>
+
+
+
+        <div class="devices">
+
+
+            <!-- COMPUTADOR -->
+
+            <div class="device"
+                 onclick="mostrarDispositivo('pc')">
+
+                <span>
+                    01
+                </span>
+
+                💻
+
+                <h3>
+                    Computador
+                </h3>
+
+                <p>
+                    Equipo que utiliza la red.
+                </p>
+
+            </div>
+
+
+
+            <!-- SWITCH -->
+
+            <div class="device"
+                 onclick="mostrarDispositivo('switch')">
+
+                <span>
+                    02
+                </span>
+
+                🔀
+
+                <h3>
+                    Switch
+                </h3>
+
+                <p>
+                    Conecta equipos de una LAN.
+                </p>
+
+            </div>
+
+
+
+            <!-- ROUTER -->
+
+            <div class="device"
+                 onclick="mostrarDispositivo('router')">
+
+                <span>
+                    03
+                </span>
+
+                📡
+
+                <h3>
+                    Router
+                </h3>
+
+                <p>
+                    Comunica diferentes redes.
+                </p>
+
+            </div>
+
+
+
+            <!-- INTERNET -->
+
+            <div class="device"
+                 onclick="mostrarDispositivo('internet')">
+
+                <span>
+                    04
+                </span>
+
+                🌐
+
+                <h3>
+                    Internet
+                </h3>
+
+                <p>
+                    Interconecta redes mundialmente.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =====================================
+             TOPOLOGÍA
+        ====================================== -->
+
+        <div class="topology">
+
+
+            <div>
+
+                💻
+
+                <small>
+                    PC
+                </small>
+
+            </div>
+
+
+            <b>
+                ━━
+            </b>
+
+
+            <div>
+
+                🔀
+
+                <small>
+                    SWITCH
+                </small>
+
+            </div>
+
+
+            <b>
+                ━━
+            </b>
+
+
+            <div>
+
+                📡
+
+                <small>
+                    ROUTER
+                </small>
+
+            </div>
+
+
+            <b>
+                ━━
+            </b>
+
+
+            <div>
+
+                🌐
+
+                <small>
+                    INTERNET
+                </small>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         CURIOSIDADES
+    ====================================== -->
+
+    <section id="curiosidades"
+             class="curiosities">
+
+
+        <div>
+
+
+            <p>
+                03 • ¿SABÍAS QUE?
+            </p>
+
+
+            <h2>
+
+                DATOS
+
+                <strong>
+                    CURIOSOS
+                </strong>
+
+            </h2>
+
+
+        </div>
+
+
+
+        <div class="fact-box">
+
+
+            <span id="numeroDato">
+
+                01
+
+            </span>
+
+
+            <h3 id="dato">
+
+                IPv4 utiliza 32 bits
+
+            </h3>
+
+
+            <p id="descripcionDato">
+
+                Esto permite aproximadamente
+                4.300 millones de direcciones IPv4.
+
+            </p>
+
+
+            <button onclick="nuevoDato()">
+
+                OTRO DATO →
+
+            </button>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer>
+
+
+        <div class="logo">
+
+            <span>
+                R
+            </span>
+
+            REDES & TELECOM
+
+        </div>
+
+
+        <p>
+
+            Proyecto educativo •
+            Redes y Telecomunicaciones
+
+        </p>
+
+
+    </footer>
+
+
+
+    <!-- =====================================
+         JAVASCRIPT
+    ====================================== -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
